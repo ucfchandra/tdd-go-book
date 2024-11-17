@@ -26,6 +26,10 @@ func teardown() {
 	log.Println("Tearing down")
 }
 
+func init() {
+	log.Println("Init setup")
+}
+
 func TestAdd(t *testing.T) {
 	// Arrange
 	e := calculator.Engine{}
